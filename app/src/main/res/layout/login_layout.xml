@@ -1,0 +1,306 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/actionbar_height">
+
+    <com.yahala.ui.Views.FrameLayoutFixed
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AppBarLayout">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/ToolBarStyle"
+                android:minHeight="48dp"
+                android:titleTextColor="@color/White"
+                android:subtitleTextColor="@color/White"
+                android:elevation="0dp"
+                android:background="#FF3f9fe0"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.yahala.ui.LoginActivityPhoneView
+            android:id="@+id/login_page1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/login_coutry_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_states"
+                android:gravity="left|center_horizontal"
+                android:maxLines="1"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="-6.5dp"
+                android:background="#808080"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="8dp"
+                    android:text="+"
+                    android:textColor="#a6a6a6"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/login_county_code_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:width="70dp"
+                    android:editable="true"
+                    android:gravity="center"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="phone"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/login_phone_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textColorHint="#979797"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/login_confirm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#808080"
+                android:textSize="16dp" />
+
+        </com.yahala.ui.LoginActivityPhoneView>
+
+        <com.yahala.ui.LoginActivitySmsView
+            android:id="@+id/login_page2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/login_sms_confirm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#808080"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/login_sms_code_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:width="220dp"
+                android:editable="true"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#979797"
+                android:textCursorDrawable="@null"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/login_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#808080"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/spinner"
+                android:layout_gravity="top|left"
+                android:gravity="center_horizontal|bottom">
+
+                <TextView
+                    android:id="@+id/wrong_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingTop="24dp"
+                    android:textColor="#316f9f"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </com.yahala.ui.LoginActivitySmsView>
+
+        <com.yahala.ui.LoginActivityRegisterView
+            android:id="@+id/login_page3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/login_register_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:textColor="#808080"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/login_first_name_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="34dp"
+                android:capitalize="words"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#979797"
+                android:textCursorDrawable="@null"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/login_last_name_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:autoText="false"
+                android:capitalize="words"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#979797"
+                android:textCursorDrawable="@null"
+                android:textSize="18dp" />
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="108dp"-->
+            <!--android:layout_height="108dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_below="@+id/login_register_info"-->
+            <!--android:id="@+id/login_avatar_button">-->
+
+            <!--<org.telegram.ui.Views.BackupImageView-->
+            <!--android:id="@+id/settings_avatar_image"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:src="@drawable/user_placeholder"/>-->
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/settings_change_avatar_button"-->
+            <!--android:background="@drawable/photo_spinner"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"/>-->
+            <!--</FrameLayout>-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/spinner"
+                android:gravity="center_horizontal|bottom"
+                android:minHeight="140dp">
+
+                <TextView
+                    android:id="@+id/changed_mind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="-40dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="#316f9f"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </com.yahala.ui.LoginActivityRegisterView>
+
+    </com.yahala.ui.Views.FrameLayoutFixed>
+
+</ScrollView>

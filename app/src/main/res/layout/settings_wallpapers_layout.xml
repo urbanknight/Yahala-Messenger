@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="48dp"
+        android:scaleType="centerCrop" />
+
+    <ProgressBar
+        android:id="@+id/action_progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="52dp"
+        android:background="#99000000"
+        android:padding="6dp"
+        android:visibility="visible" />
+
+    <com.yahala.ui.Views.HorizontalListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="102dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="48dp"
+        android:clipToPadding="false"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_selector"
+            android:paddingLeft="3dp"
+            android:textAllCaps="true"
+            android:textColor="#111111"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:background="#c9c9c9" />
+
+        <FrameLayout
+            android:id="@+id/done_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_selector"
+            android:clickable="true"
+            android:paddingRight="3dp">
+
+            <TextView
+                android:id="@+id/done_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_ab_done_gray"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#111111"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,1378 @@
+[
+  {
+    "name": "smile",
+    "category": "faces"
+  },
+  {
+    "name": "smiley",
+    "category": "faces"
+  },
+  {
+    "name": "grinning",
+    "category": "faces"
+  },
+  {
+    "name": "blush",
+    "category": "faces"
+  },
+  {
+    "name": "relaxed",
+    "category": "faces"
+  },
+  {
+    "name": ":wink:",
+    "category": "faces"
+  },
+  {
+    "name": "heart_eyes",
+    "category": "faces"
+  },
+  {
+    "name": "kissing_heart",
+    "category": "faces"
+  },
+  {
+    "name": "kissing_closed_eyes",
+    "category": "faces"
+  },
+  {
+    "name": "kissing",
+    "category": "faces"
+  },
+  {
+    "name": "kissing_smiling_eyes",
+    "category": "faces"
+  },
+  {
+    "name": "stuck_out_tongue_winking_eye",
+    "category": "faces"
+  },
+  {
+    "name": "stuck_out_tongue_closed_eyes",
+    "category": "faces"
+  },
+  {
+    "name": "stuck_out_tongue",
+    "category": "faces"
+  },
+  {
+    "name": "flushed",
+    "category": "faces"
+  },
+  {
+    "name": "grin",
+    "category": "faces"
+  },
+  {
+    "name": "pensive",
+    "category": "faces"
+  },
+  {
+    "name": "relieved",
+    "category": "faces"
+  },
+  {
+    "name": "unamused",
+    "category": "faces"
+  },
+  {
+    "name": "disappointed",
+    "category": "faces"
+  },
+  {
+    "name": "persevere",
+    "category": "faces"
+  },
+  {
+    "name": "cry",
+    "category": "faces"
+  },
+  {
+    "name": "joy",
+    "category": "faces"
+  },
+  {
+    "name": "sob",
+    "category": "faces"
+  },
+  {
+    "name": "sleepy",
+    "category": "faces"
+  },
+  {
+    "name": "disappointed_relieved",
+    "category": "faces"
+  },
+  {
+    "name": "cold_sweat",
+    "category": "faces"
+  },
+  {
+    "name": "sweat_smile",
+    "category": "faces"
+  },
+  {
+    "name": "sweat",
+    "category": "faces"
+  },
+  {
+    "name": "weary",
+    "category": "faces"
+  },
+  {
+    "name": "tired_face",
+    "category": "faces"
+  },
+  {
+    "name": "fearful",
+    "category": "faces"
+  },
+  {
+    "name": "scream",
+    "category": "faces"
+  },
+  {
+    "name": "angry",
+    "category": "faces"
+  },
+  {
+    "name": "rage",
+    "category": "faces"
+  },
+  {
+    "name": "triumph",
+    "category": "faces"
+  },
+  {
+    "name": "confounded",
+    "category": "faces"
+  },
+  {
+    "name": "laughing",
+    "category": "faces"
+  },
+  {
+    "name": "yum",
+    "category": "faces"
+  },
+  {
+    "name": "mask",
+    "category": "faces"
+  },
+  {
+    "name": "sunglasses",
+    "category": "faces"
+  },
+  {
+    "name": "sleeping",
+    "category": "faces"
+  },
+  {
+    "name": "dizzy_face",
+    "category": "faces"
+  },
+  {
+    "name": "astonished",
+    "category": "faces"
+  },
+  {
+    "name": "worried",
+    "category": "faces"
+  },
+  {
+    "name": "frowning",
+    "category": "faces"
+  },
+  {
+    "name": "anguished",
+    "category": "faces"
+  },
+  {
+    "name": "smiling_imp",
+    "category": "faces"
+  },
+  {
+    "name": "imp",
+    "category": "faces"
+  },
+  {
+    "name": "open_mouth",
+    "category": "faces"
+  },
+  {
+    "name": "grimacing",
+    "category": "faces"
+  },
+  {
+    "name": "neutral_face",
+    "category": "faces"
+  },
+  {
+    "name": "confused",
+    "category": "faces"
+  },
+  {
+    "name": "hushed",
+    "category": "faces"
+  },
+  {
+    "name": "no_mouth",
+    "category": "faces"
+  },
+  {
+    "name": "innocent",
+    "category": "faces"
+  },
+  {
+    "name": "smirk",
+    "category": "faces"
+  },
+  {
+    "name": "expressionless",
+    "category": "faces"
+  },
+  {
+    "name": "boy",
+    "category": "faces"
+  },
+  {
+    "name": "girl",
+    "category": "faces"
+  },
+  {
+    "name": "woman",
+    "category": "faces"
+  },
+  {
+    "name": "man",
+    "category": "faces"
+  },
+  {
+    "name": "baby",
+    "category": "faces"
+  },
+  {
+    "name": "older_woman",
+    "category": "faces"
+  },
+  {
+    "name": "older_man",
+    "category": "faces"
+  },
+  {
+    "name": "person_with_blond_hair",
+    "category": "faces"
+  },
+  {
+    "name": "man_with_gua_pi_mao",
+    "category": "faces"
+  },
+  {
+    "name": "man_with_turban",
+    "category": "faces"
+  },
+  {
+    "name": "construction_worker",
+    "category": "faces"
+  },
+  {
+    "name": "cop",
+    "category": "faces"
+  },
+  {
+    "name": "angel",
+    "category": "faces"
+  },
+  {
+    "name": "princess",
+    "category": "faces"
+  },
+  {
+    "name": "smiley_cat",
+    "category": "faces"
+  },
+  {
+    "name": "heart_eyes_cat",
+    "category": "faces"
+  },
+  {
+    "name": "kissing_cat",
+    "category": "faces"
+  },
+  {
+    "name": "smirk_cat",
+    "category": "faces"
+  },
+  {
+    "name": "scream_cat",
+    "category": "faces"
+  },
+  {
+    "name": "crying_cat_face",
+    "category": "faces"
+  },
+  {
+    "name": "pouting_cat",
+    "category": "faces"
+  },
+  {
+    "name": "japanese_ogre",
+    "category": "faces"
+  },
+  {
+    "name": "japanese_goblin",
+    "category": "faces"
+  },
+  {
+    "name": "see_no_evil",
+    "category": "faces"
+  },
+  {
+    "name": "hear_no_evil",
+    "category": "faces"
+  },
+  {
+    "name": "speak_no_evil",
+    "category": "faces"
+  },
+  {
+    "name": "guardsman",
+    "category": "faces"
+  },
+  {
+    "name": "skull",
+    "category": "faces"
+  },
+  {
+    "name": "feet",
+    "category": "faces"
+  },
+  {
+    "name": "lips",
+    "category": "faces"
+  },
+  {
+    "name": "droplet",
+    "category": "faces"
+  },
+  {
+    "name": "ear",
+    "category": "faces"
+  },
+  {
+    "name": "eyes",
+    "category": "faces"
+  },
+  {
+    "name": "tongue",
+    "category": "faces"
+  },
+  {
+    "name": "love_letter",
+    "category": "faces"
+  },
+  {
+    "name": "bust_in_silhouette",
+    "category": "faces"
+  },
+  {
+    "name": "busts_in_silhouette",
+    "category": "faces"
+  },
+  {
+    "name": "speech_balloon",
+    "category": "faces"
+  },
+  {
+    "name": "thought_balloon",
+    "category": "faces"
+  },
+  {
+    "name": "bowtie",
+    "category": "faces"
+  },
+  {
+    "name": "neckbeard",
+    "category": "faces"
+  },
+  {
+    "name": "alien",
+    "category": "faces"
+  },
+  {
+    "name": "yellow_heart",
+    "category": "faces"
+  },
+  {
+    "name": "blue_heart",
+    "category": "faces"
+  },
+  {
+    "name": "purple_heart",
+    "category": "faces"
+  },
+  {
+    "name": "green_heart",
+    "category": "faces"
+  },
+  {
+    "name": "heart",
+    "category": "faces"
+  },
+  {
+    "name": "broken_heart",
+    "category": "faces"
+  },
+  {
+    "name": "heartpulse",
+    "category": "faces"
+  },
+  {
+    "name": "heartbeat",
+    "category": "faces"
+  },
+  {
+    "name": "two_hearts",
+    "category": "faces"
+  },
+  {
+    "name": "revolving_hearts",
+    "category": "faces"
+  },
+  {
+    "name": "cupid",
+    "category": "faces"
+  },
+  {
+    "name": "sparkling_heart",
+    "category": "faces"
+  },
+  {
+    "name": "sparkles",
+    "category": "faces"
+  },
+  {
+    "name": "star2",
+    "category": "faces"
+  },
+  {
+    "name": "dizzy",
+    "category": "faces"
+  },
+  {
+    "name": "boom",
+    "category": "faces"
+  },
+  {
+    "name": "anger",
+    "category": "faces"
+  },
+  {
+    "name": "exclamation",
+    "category": "faces"
+  },
+  {
+    "name": "question",
+    "category": "faces"
+  },
+  {
+    "name": "grey_exclamation",
+    "category": "faces"
+  },
+  {
+    "name": "grey_question",
+    "category": "faces"
+  },
+  {
+    "name": "zzz",
+    "category": "faces"
+  },
+  {
+    "name": "dash",
+    "category": "faces"
+  },
+  {
+    "name": "sweat_drops",
+    "category": "faces"
+  },
+  {
+    "name": "notes",
+    "category": "faces"
+  },
+  {
+    "name": "musical_note",
+    "category": "faces"
+  },
+  {
+    "name": "fire",
+    "category": "faces"
+  },
+  {
+    "name": "shit",
+    "category": "faces"
+  },
+  {
+    "name": "thumbsup",
+    "category": "faces"
+  },
+  {
+    "name": "thumbsdown",
+    "category": "faces"
+  },
+  {
+    "name": "ok_hand",
+    "category": "faces"
+  },
+  {
+    "name": "punch",
+    "category": "faces"
+  },
+  {
+    "name": "fist",
+    "category": "faces"
+  },
+  {
+    "name": "v",
+    "category": "faces"
+  },
+  {
+    "name": "wave",
+    "category": "faces"
+  },
+  {
+    "name": "hand",
+    "category": "faces"
+  },
+  {
+    "name": "raised_hand",
+    "category": "faces"
+  },
+  {
+    "name": "open_hands",
+    "category": "faces"
+  },
+  {
+    "name": "point_up",
+    "category": "faces"
+  },
+  {
+    "name": "point_down",
+    "category": "faces"
+  },
+  {
+    "name": "point_left",
+    "category": "faces"
+  },
+  {
+    "name": "point_right",
+    "category": "faces"
+  },
+  {
+    "name": "raised_hands",
+    "category": "faces"
+  },
+  {
+    "name": "pray",
+    "category": "faces"
+  },
+  {
+    "name": "point_up_2",
+    "category": "faces"
+  },
+  {
+    "name": "clap",
+    "category": "faces"
+  },
+  {
+    "name": "muscle",
+    "category": "faces"
+  },
+  {
+    "name": "metal",
+    "category": "faces"
+  },
+  {
+    "name": "fu",
+    "category": "faces"
+  },
+  {
+    "name": "walking",
+    "category": "faces"
+  },
+  {
+    "name": "running",
+    "category": "faces"
+  },
+  {
+    "name": "couple",
+    "category": "faces"
+  },
+  {
+    "name": "family",
+    "category": "faces"
+  },
+  {
+    "name": "two_men_holding_hands",
+    "category": "faces"
+  },
+  {
+    "name": "two_women_holding_hands",
+    "category": "faces"
+  },
+  {
+    "name": "dancer",
+    "category": "faces"
+  },
+  {
+    "name": "ok_woman",
+    "category": "faces"
+  },
+  {
+    "name": "no_good",
+    "category": "faces"
+  },
+  {
+    "name": "information_desk_person",
+    "category": "faces"
+  },
+  {
+    "name": "raising_hand",
+    "category": "faces"
+  },
+  {
+    "name": "bride_with_veil",
+    "category": "faces"
+  },
+  {
+    "name": "person_with_pouting_face",
+    "category": "faces"
+  },
+  {
+    "name": "person_frowning",
+    "category": "faces"
+  },
+  {
+    "name": "bow",
+    "category": "faces"
+  },
+  {
+    "name": "couplekiss",
+    "category": "faces"
+  },
+  {
+    "name": "couplekiss",
+    "category": "faces"
+  },
+  {
+    "name": "couple_with_heart",
+    "category": "faces"
+  },
+  {
+    "name": "massage",
+    "category": "faces"
+  },
+  {
+    "name": "haircut",
+    "category": "faces"
+  },
+  {
+    "name": "nail_care",
+    "category": "faces"
+  },
+  {
+    "name": "arrow_backward",
+    "category": "symbols"
+  },
+  {
+    "name": ":arrow_down",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_forward",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_left",
+    "category": "symbols"
+  },
+  {
+    "name": "capital_abcd",
+    "category": "symbols"
+  },
+  {
+    "name": "abcd",
+    "category": "symbols"
+  },
+  {
+    "name": "abc",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_lower_left",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_lower_right",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_right",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_up",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_upper_left",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_upper_right",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_double_down",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_double_up",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_down_small",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_heading_down",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_heading_up",
+    "category": "symbols"
+  },
+  {
+    "name": "leftwards_arrow_with_hook",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_right_hook",
+    "category": "symbols"
+  },
+  {
+    "name": "left_right_arrow",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_up_down",
+    "category": "symbols"
+  },
+  {
+    "name": "arrow_up_small",
+    "category": "symbols"
+  },
+  {
+    "name": "arrows_clockwise",
+    "category": "symbols"
+  },
+  {
+    "name": "arrows_counterclockwise",
+    "category": "symbols"
+  },
+  {
+    "name": "rewind",
+    "category": "symbols"
+  },
+  {
+    "name": "fast_forward",
+    "category": "symbols"
+  },
+  {
+    "name": "information_source",
+    "category": "symbols"
+  },
+  {
+    "name": "ok",
+    "category": "symbols"
+  },
+  {
+    "name": "repeat_one",
+    "category": "symbols"
+  },
+  {
+    "name": "new",
+    "category": "symbols"
+  },
+  {
+    "name": "top",
+    "category": "symbols"
+  },
+  {
+    "name": "up",
+    "category": "symbols"
+  },
+  {
+    "name": "cool",
+    "category": "symbols"
+  },
+  {
+    "name": "free",
+    "category": "symbols"
+  },
+  {
+    "name": "ng",
+    "category": "symbols"
+  },
+  {
+    "name": "cinema",
+    "category": "symbols"
+  },
+  {
+    "name": "koko",
+    "category": "signal_strength"
+  },
+  {
+    "name": "u5272",
+    "category": "symbols"
+  },
+  {
+    "name": "u5408",
+    "category": "symbols"
+  },
+  {
+    "name": "u55b6",
+    "category": "symbols"
+  },
+  {
+    "name": "u6307",
+    "category": "symbols"
+  },
+  {
+    "name": "u6708",
+    "category": "symbols"
+  },
+  {
+    "name": "u6709",
+    "category": "symbols"
+  },
+  {
+    "name": "u6e80",
+    "category": "symbols"
+  },
+  {
+    "name": "u7121",
+    "category": "symbols"
+  },
+  {
+    "name": "u7533",
+    "category": "symbols"
+  },
+  {
+    "name": "u7a7a",
+    "category": "symbols"
+  },
+  {
+    "name": "u7981",
+    "category": "symbols"
+  },
+  {
+    "name": "sa",
+    "category": "symbols"
+  },
+  {
+    "name": "restroom",
+    "category": "symbols"
+  },
+  {
+    "name": "mens",
+    "category": "symbols"
+  },
+  {
+    "name": "womens",
+    "category": "symbols"
+  },
+  {
+    "name": "baby_symbol",
+    "category": "symbols"
+  },
+  {
+    "name": "no_smoking",
+    "category": "symbols"
+  },
+  {
+    "name": "parking",
+    "category": "symbols"
+  },
+  {
+    "name": "wheelchair",
+    "category": "symbols"
+  },
+  {
+    "name": "metro",
+    "category": "symbols"
+  },
+  {
+    "name": "baggage_claim",
+    "category": "symbols"
+  },
+  {
+    "name": "accept",
+    "category": "symbols"
+  },
+  {
+    "name": "wc",
+    "category": "symbols"
+  },
+  {
+    "name": "potable_water",
+    "category": "symbols"
+  },
+  {
+    "name": "put_litter_in_its_place",
+    "category": "symbols"
+  },
+  {
+    "name": "secret",
+    "category": "symbols"
+  },
+  {
+    "name": "congratulations",
+    "category": "symbols"
+  },
+  {
+    "name": "u6708",
+    "category": "symbols"
+  },
+  {
+    "name": "m",
+    "category": "symbols"
+  },
+  {
+    "name": "passport_control",
+    "category": "symbols"
+  },
+  {
+    "name": "left_luggage",
+    "category": "symbols"
+  },
+  {
+    "name": "customs",
+    "category": "symbols"
+  },
+  {
+    "name": "ideograph_advantage",
+    "category": "symbols"
+  },
+  {
+    "name": "cl",
+    "category": "symbols"
+  },
+  {
+    "name": "sos",
+    "category": "symbols"
+  },
+  {
+    "name": "id",
+    "category": "symbols"
+  },
+  {
+    "name": "no_entry_sign",
+    "category": "symbols"
+  },
+  {
+    "name": "underage",
+    "category": "symbols"
+  },
+  {
+    "name": "do_not_litter",
+    "category": "symbols"
+  },
+  {
+    "name": "non-potable_water",
+    "category": "symbols"
+  },
+  {
+    "name": "no_bicycles",
+    "category": "symbols"
+  },
+  {
+    "name": "no_pedestrians",
+    "category": "symbols"
+  },
+  {
+    "name": "children_crossing",
+    "category": "symbols"
+  },
+  {
+    "name": "no_entry",
+    "category": "symbols"
+  },
+  {
+    "name": "eight_spoked_asterisk",
+    "category": "symbols"
+  },
+  {
+    "name": "eight_spoked_asterisk",
+    "category": "symbols"
+  },
+  {
+    "name": "heart_decoration",
+    "category": "symbols"
+  },
+  {
+    "name": "vs",
+    "category": "symbols"
+  },
+  {
+    "name": "vibration_mode",
+    "category": "symbols"
+  },
+  {
+    "name": "mobile_phone_off",
+    "category": "symbols"
+  },
+  {
+    "name": "chart",
+    "category": "symbols"
+  },
+  {
+    "name": "currency_exchange",
+    "category": "symbols"
+  },
+  {
+    "name": "aries",
+    "category": "symbols"
+  },
+  {
+    "name": "taurus",
+    "category": "symbols"
+  },
+  {
+    "name": "gemini",
+    "category": "symbols"
+  },
+  {
+    "name": "cancer",
+    "category": "symbols"
+  },
+  {
+    "name": "leo",
+    "category": "symbols"
+  },
+  {
+    "name": "virgo",
+    "category": "symbols"
+  },
+  {
+    "name": "libra",
+    "category": "symbols"
+  },
+  {
+    "name": "scorpius",
+    "category": "symbols"
+  },
+  {
+    "name": "sagittarius",
+    "category": "symbols"
+  },
+  {
+    "name": "capricorn",
+    "category": "symbols"
+  },
+  {
+    "name": "aquarius",
+    "category": "symbols"
+  },
+  {
+    "name": "pisces",
+    "category": "symbols"
+  },
+  {
+    "name": "ophiuchus",
+    "category": "symbols"
+  },
+  {
+    "name": "six_pointed_star",
+    "category": "symbols"
+  },
+  {
+    "name": "negative_squared_cross_mark",
+    "category": "symbols"
+  },
+  {
+    "name": "a",
+    "category": "symbols"
+  },
+  {
+    "name": "b",
+    "category": "symbols"
+  },
+  {
+    "name": "ab",
+    "category": "symbols"
+  },
+  {
+    "name": "o2",
+    "category": "symbols"
+  },
+  {
+    "name": "diamond_shape_with_a_dot_inside",
+    "category": "symbols"
+  },
+  {
+    "name": "recycle",
+    "category": "symbols"
+  },
+  {
+    "name": "end",
+    "category": "symbols"
+  },
+  {
+    "name": "on",
+    "category": "symbols"
+  },
+  {
+    "name": "soon",
+    "category": "symbols"
+  },
+  {
+    "name": "clock1",
+    "category": "symbols"
+  },
+  {
+    "name": "clock130",
+    "category": "symbols"
+  },
+  {
+    "name": "clock10",
+    "category": "symbols"
+  },
+  {
+    "name": "clock1030",
+    "category": "symbols"
+  },
+  {
+    "name": "clock11",
+    "category": "symbols"
+  },
+  {
+    "name": "clock1130",
+    "category": "symbols"
+  },
+  {
+    "name": "clock12",
+    "category": "symbols"
+  },
+  {
+    "name": "clock2",
+    "category": "symbols"
+  },
+  {
+    "name": "23232",
+    "category": "symbols"
+  },
+  {
+    "name": "clock230",
+    "category": "symbols"
+  },
+  {
+    "name": "clock3",
+    "category": "symbols"
+  },
+  {
+    "name": "clock4",
+    "category": "symbols"
+  },
+  {
+    "name": "clock430",
+    "category": "symbols"
+  },
+  {
+    "name": "clock5",
+    "category": "symbols"
+  },
+  {
+    "name": "clock530",
+    "category": "symbols"
+  },
+  {
+    "name": "clock6",
+    "category": "symbols"
+  },
+  {
+    "name": "clock630",
+    "category": "symbols"
+  },
+  {
+    "name": "clock7",
+    "category": "symbols"
+  },
+  {
+    "name": "clock730",
+    "category": "symbols"
+  },
+  {
+    "name": "clock8",
+    "category": "symbols"
+  },
+  {
+    "name": "clock830",
+    "category": "symbols"
+  },
+  {
+    "name": "clock9",
+    "category": "symbols"
+  },
+  {
+    "name": "clock930",
+    "category": "symbols"
+  },
+  {
+    "name": "heavy_dollar_sign",
+    "category": "symbols"
+  },
+  {
+    "name": "copyright",
+    "category": "symbols"
+  },
+  {
+    "name": "tm",
+    "category": "symbols"
+  },
+  {
+    "name": "x",
+    "category": "symbols"
+  },
+  {
+    "name": "heavy_exclamation_mark",
+    "category": "symbols"
+  },
+  {
+    "name": "bangbang",
+    "category": "symbols"
+  },
+  {
+    "name": "interrobang",
+    "category": "symbols"
+  },
+  {
+    "name": "o",
+    "category": "symbols"
+  },
+  {
+    "name": "heavy_multiplication_x",
+    "category": "symbols"
+  },
+  {
+    "name": "heavy_plus_sign",
+    "category": "symbols"
+  },
+  {
+    "name": "heavy_minus_sign",
+    "category": "symbols"
+  },
+  {
+    "name": "heavy_division_sign",
+    "category": "symbols"
+  },
+  {
+    "name": "white_flower",
+    "category": "symbols"
+  },
+  {
+    "name": "100",
+    "category": "symbols"
+  },
+  {
+    "name": "heavy_check_mark",
+    "category": "symbols"
+  },
+  {
+    "name": "ballot_box_with_check",
+    "category": "symbols"
+  },
+  {
+    "name": "radio_button",
+    "category": "symbols"
+  },
+  {
+    "name": "link",
+    "category": "symbols"
+  },
+  {
+    "name": "curly_loop",
+    "category": "symbols"
+  },
+  {
+    "name": "wavy_dash",
+    "category": "symbols"
+  },
+  {
+    "name": "part_alternation_mark",
+    "category": "symbols"
+  },
+  {
+    "name": "trident",
+    "category": "symbols"
+  },
+  {
+    "name": "black_square",
+    "category": "symbols"
+  },
+  {
+    "name": "white_large_square",
+    "category": "symbols"
+  },
+  {
+    "name": "white_check_mark",
+    "category": "symbols"
+  },
+  {
+    "name": "black_square_button",
+    "category": "symbols"
+  },
+  {
+    "name": "white_square_button",
+    "category": "symbols"
+  },
+  {
+    "name": "black_circle",
+    "category": "symbols"
+  },
+  {
+    "name": "white_circle",
+    "category": "symbols"
+  },
+  {
+    "name": "red_circle",
+    "category": "symbols"
+  },
+  {
+    "name": "large_blue_circle",
+    "category": "symbols"
+  },
+  {
+    "name": "large_blue_diamond",
+    "category": "symbols"
+  },
+  {
+    "name": "large_orange_diamond",
+    "category": "symbols"
+  },
+  {
+    "name": "small_blue_diamond",
+    "category": "symbols"
+  },
+  {
+    "name": "small_orange_diamond",
+    "category": "symbols"
+  },
+  {
+    "name": "small_red_triangle",
+    "category": "symbols"
+  },
+  {
+    "name": "shipit",
+    "category": "symbols"
+  }
+]

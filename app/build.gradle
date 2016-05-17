@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+repositories {
+    mavenCentral()
+}
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    //useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    // aaptOptions.useAaptPngCruncher = true
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 7
+        versionName "0.8.11"
+        /*ndk{
+            moduleName  "yahala"
+        }*/
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            jniDebuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        release {
+            minifyEnabled true
+            debuggable false
+            jniDebuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+
+    }
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+
+        jni.srcDirs = [] //disable automatic ndk-build call
+
+    }
+}
+repositories {
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+    mavenCentral()
+}
+dependencies {
+    compile 'com.android.support:design:23.1.1'
+    //compile 'com.android.support:recyclerview-v7:23.0.0'
+    //compile 'com.github.ksoichiro:android-observablescrollview:1.5.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('src/main/libs/httpmime-4.2.5.jar')
+    compile files('src/main/libs/greendao.jar')
+    compile files('src/main/libs/libphonenumber-6.0.jar')
+    compile files('src/main/libs/prettytime-3.2.4.Final.jar')
+    compile files('src/main/libs/universal-image-loader-1.9.2.jar')
+    compile files('src/main/libs/gson-1.7.1.jar')
+    compile files('src/main/libs/java-pinning-jar-1.0.1.jar')
+    compile files('src/main/libs/autobanh.jar')
+
+    compile 'io.pristine:libjingle:10839@aar'
+    compile 'com.pubnub:pubnub-android:3.7.4'
+    /*compile 'io.pristine:libjingle:9694@aar'
+    compile 'me.kevingleason:pnwebrtc:1.0.6@aar'
+    compile 'com.pubnub:pubnub-android:3.7.4'*/
+
+    compile "org.igniterealtime.smack:smack-android-extensions:4.2.0-alpha3"
+    compile "org.igniterealtime.smack:smack-tcp:4.2.0-alpha3"
+
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+
+    //compile 'com.google.android.gms:play-services:4.3.+'
+    compile 'com.soundcloud.android:android-crop:1.0.1@aar'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+
+    // compile "com.android.support:mediarouter-v7:23.0.0"
+    compile 'com.googlecode.mp4parser:isoparser:1.0.+'
+}

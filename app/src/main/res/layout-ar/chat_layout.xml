@@ -1,0 +1,312 @@
+<com.yahala.ui.Views.SizeNotifierRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hd"
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop" />
+
+    <com.yahala.ui.Views.FrameLayoutFixed
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="48dp">
+
+        <TextView
+            android:id="@+id/searchEmptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="2dp"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/encrypted_chat_placeholder"
+            android:layout_gravity="center" />
+
+    </com.yahala.ui.Views.FrameLayoutFixed>
+
+    <com.yahala.ui.Views.LayoutListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/chat_list_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:clipToPadding="false"
+        android:layout_marginBottom="-3dp"
+        android:layout_above="@+id/chat_compose_panel"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:stackFromBottom="true"
+        android:paddingBottom="3dp"
+        android:paddingTop="@dimen/actionbar_height"
+        android:cacheColorHint="#00000000" />
+
+    <FrameLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/progressLayoutInner"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="48dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/center_progress"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/loading_animation"
+                android:indeterminateDuration="1500"></ProgressBar>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/top_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/top_panel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/top_plane_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="4dp"
+            android:clickable="true"
+            android:scaleType="centerInside" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat_compose_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/compose_panel"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/chat_smile_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/chat_text_edit"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="1dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_msg_panel_smiles" />
+
+        <ImageButton
+            android:id="@+id/chat_send_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/chat_text_edit"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/send_button_states" />
+
+        <EditText
+            android:id="@+id/chat_text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@id/chat_send_button"
+            android:layout_toRightOf="@id/chat_smile_button"
+            android:ems="10"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="16384"
+
+            android:maxLines="4"
+            android:minHeight="48dp"
+            android:paddingBottom="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#909090"
+            android:textCursorDrawable="@null"
+            android:textSize="18dp" />
+
+        <com.yahala.ui.Views.FrameLayoutFixed
+            android:id="@+id/record_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/slideText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/slidearrow" />
+
+                <TextView
+                    android:id="@+id/slideToCancelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="13dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/rec" />
+
+                <TextView
+                    android:id="@+id/recording_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="00:00"
+                    android:textColor="#4d4c4b"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </com.yahala.ui.Views.FrameLayoutFixed>
+
+        <ImageButton
+            android:id="@+id/chat_audio_send_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/chat_text_edit"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/white"
+            android:enabled="false"
+            android:paddingRight="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mic_button_states" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/bottom_overlay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#7f7f7f"
+            android:textSize="16dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom_overlay_chat"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fbfcfd"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/bottom_overlay_chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#3e6fa1"
+            android:textSize="18dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/pagedown_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_compose_panel"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/pagedown" />
+
+    <ImageView
+        android:src="@drawable/ic_msg_panel_smiles"
+        android:layout_width="48dp"
+        android:layout_above="@id/chat_compose_panel"
+        android:layout_alignParentLeft="true"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:paddingTop="1dp"
+        android:scaleType="centerInside"
+        android:paddingLeft="4dp"
+        android:id="@+id/chat_sticker_button"
+        android:layout_alignBottom="@+id/chat_text_edit"
+
+
+        android:layout_marginBottom="4dp" />
+</com.yahala.ui.Views.SizeNotifierRelativeLayout>

@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:layout_gravity="top"
+    android:paddingLeft="@dimen/listView_row_padding"
+    android:paddingRight="@dimen/listView_row_padding"
+    android:background="@drawable/list_selector">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/settings_row_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="9dp"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/settings_row_text_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textColor="#999999"
+            android:textSize="13dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="48dp"
+            android:background="#e8e8e8" />
+
+        <ImageButton
+            android:id="@+id/settings_edit_name"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/list_selector"
+            android:clickable="true"
+            android:paddingTop="2dp"
+            android:src="@drawable/ic_profile_send_message"
+            android:layout_weight="0" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/settings_row_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/divider" />
+
+</FrameLayout>

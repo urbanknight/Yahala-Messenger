@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp">
+
+            <com.yahala.ui.Views.CircleImageView.PictureImplCircleImageView
+                android:id="@+id/settings_avatar_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/group_blue" />
+
+            <ImageButton
+                android:id="@+id/settings_change_avatar_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/photo_spinner" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/bubble_input_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="0dp"
+            android:gravity="left|center_vertical"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLines="4"
+            android:minHeight="52dp"
+            android:paddingTop="0dp"
+            android:textColor="#000000"
+            android:textColorHint="#a6a6a6"
+            android:textCursorDrawable="@null"
+            android:textSize="18dp" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yahala.ui.Views.PinnedHeaderListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbars="none" />
+
+    </FrameLayout>
+
+</LinearLayout>

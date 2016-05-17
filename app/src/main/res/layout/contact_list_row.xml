@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="74dp"
+    android:paddingLeft="@dimen/listView_row_padding"
+    android:paddingRight="@dimen/listView_row_padding"
+    android:background="@drawable/list_row"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/avatar_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:animateLayoutChanges="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dp"
+
+        android:paddingRight="8dp"
+        android:paddingTop="1dp">
+
+        <com.yahala.ui.Views.CircleImageView.PictureImplCircleImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="13dp"
+            android:baselineAlignBottom="false"
+            android:clickable="true"
+
+            android:cropToPadding="false"
+            android:maxHeight="60px"
+            android:maxWidth="60px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_blue" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/displayName"
+                        style="@style/displayName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:textAlignment="viewStart"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/checkImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/presence"
+                        android:layout_marginRight="-9dp"
+                        android:src="@drawable/dialogs_check"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/halfcheckImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/presence"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/dialogs_halfcheck"
+                        android:visibility="invisible" />
+                    <!-- <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" android:textStyle="normal" android:fontFamily="Roboto"
+                         android:text="Offline" android:textSize="11dp" android:textColor="@color/Gray"
+                         android:id="@+id/presence"
+                         android:background="@drawable/roundedbg"
+                         android:layout_alignParentTop="true"
+                         android:layout_alignParentLeft="true"
+                         android:layout_alignParentStart="true" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/statusMessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="21dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/displayName"
+                        android:layout_gravity="left"
+                        android:layout_weight="2"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/Gray"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1.6"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/callVoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/call"
+                    android:background="@drawable/button_bg"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/callVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/video_call"
+                    android:background="@drawable/button_bg"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/presenceImg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/img"
+                    android:layout_alignEnd="@+id/img"
+                    android:layout_alignRight="@+id/img"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_type_unavailable"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/dividerGray" />
+
+</RelativeLayout>

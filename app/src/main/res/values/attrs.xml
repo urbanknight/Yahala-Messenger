@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomView">
+        <attr name="matchHeightToWidth" format="boolean" />
+        <attr name="matchWidthToHeight" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="GifMoviewView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifMoviewViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="src" format="reference" />
+
+        <attr name="bottomCircleOnColor" format="color" />
+        <attr name="bottomCircleOffColor" format="color" />
+        <attr name="bottomCircleIndent" format="dimension" />
+
+        <attr name="middleCircleOnColor" format="color" />
+        <attr name="middleCircleOffColor" format="color" />
+        <attr name="middleCircleIndent" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="indicatorColor" format="color" />
+        <attr name="underlineColor" format="color" />
+        <attr name="dividerColor" format="color" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="dividerPadding1" format="dimension" />
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="scrollOffset" format="dimension" />
+        <attr name="tabBackground2" format="reference" />
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="textAllCaps1" format="boolean" />
+        <attr name="tabSwitch" format="boolean" />
+        <attr name="activateTextColor" format="color" />
+        <attr name="deactivateTextColor" format="color" />
+    </declare-styleable>
+</resources>

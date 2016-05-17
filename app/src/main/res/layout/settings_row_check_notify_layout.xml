@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:layout_gravity="top"
+    android:paddingRight="@dimen/listView_row_padding"
+    android:paddingLeft="@dimen/listView_row_padding">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/settings_row_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:textColor="#494949"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/settings_row_check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/btn_check_on"
+            android:layout_weight="0" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/settings_row_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/divider" />
+
+</FrameLayout>

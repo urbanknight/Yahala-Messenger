@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top">
+
+    <ImageView
+        android:id="@+id/messages_list_row_avatar"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="2dp"
+        android:contentDescription=""
+        android:scaleType="center"
+        android:src="@drawable/ic_ab_add_group" />
+
+    <TextView
+        android:id="@+id/messages_list_row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="75dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/LightBlack"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/settings_row_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_gravity="bottom"
+        android:background="@color/dividerGray"
+        android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,57 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sabd="http://schemas.android.com/apk/res-auto">
+
+    <!--<item
+        android:id="@+id/contacts_list_menu_search"
+        android:icon="@drawable/ic_ab_search"
+        android:title="@string/Search"
+        sabd:showAsAction="always|collapseActionView"
+        sabd:actionViewClass="android.support.v7.widget.SearchView"/>-->
+
+    <item
+        android:id="@+id/menu_type_availability"
+        android:icon="@drawable/ic_type_available"
+        android:title="@string/Attach"
+        sabd:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/Online"
+                android:icon="@drawable/ic_type_available"
+                android:title="@string/online" />
+            <item
+                android:id="@+id/FreeToChat"
+                android:icon="@drawable/ic_type_available"
+                android:title="@string/FreeToChat" />
+
+            <item
+                android:id="@+id/Away"
+                android:icon="@drawable/ic_type_away"
+                android:title="@string/Away" />
+
+            <item
+                android:id="@+id/DoNotDisturb"
+                android:icon="@drawable/ic_type_dns"
+                android:title="@string/DoNotDisturb" />
+            <item
+                android:id="@+id/Offline"
+                android:icon="@drawable/ic_type_unavailable"
+                android:title="@string/offline" />
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/NewGroup"
+        android:title="@string/MenuNewGroup" />
+    <item
+        android:id="@+id/InviteFriends"
+        android:title="@string/InviteFriends" />
+
+
+    <item
+        android:id="@+id/Status"
+        android:title="@string/Status" />
+    <item
+        android:id="@+id/contacts_list_menu_settings"
+        android:title="@string/SETTINGS" />
+</menu>

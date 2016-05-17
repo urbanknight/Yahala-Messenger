@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_network_title">Network</string>
+    <string name="pref_transport">Transport</string>
+    <string name="pref_transport_udp">UDP</string>
+    <string name="pref_transport_tcp">TCP</string>
+    <string name="pref_transport_tls">TLS</string>
+    <string name="pref_transport_use_random_ports">Use random ports</string>
+    <string name="pref_sip_port_title">SIP port to use</string>
+    <string name="error_call_declined">Call declined</string>
+    <string name="error_user_not_found">User not found</string>
+    <string name="error_incompatible_media">Incompatible media parameters</string>
+    <string name="error_low_bandwidth">Your correspondent has low bandwidth, video can\'t be started</string>
+    <string name="error_network_unreachable">Network is unreachable</string>
+
+</resources>

@@ -1,0 +1,177 @@
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+# Optimization is turned off by default. Dex does not like code run
+# through the ProGuard optimize and preverify steps (and performs some
+# of these optimizations on its own).
+-dontoptimize
+-dontpreverify
+# Note that if you want to enable optimization, you cannot just
+# include optimization flags in your own project configuration file;
+# instead you will need to point to the
+# "proguard-android-optimize.txt" file instead of this one from your
+# project.properties file.
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingServicea
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.PreferenceActivity
+-keep public class * extends android.view.View
+-keep public class * extends android.widget.BaseAdapter
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * implements android.view.View.OnTouchListener
+-keep public class * implements android.view.View.OnClickListener
+
+
+
+
+#-libraryjars src/main/libs/asmack-android-8-4.0.3-SNAPSHOT-2014-08-10.jar
+#-libraryjars src/main/libs/httpmime-4.2.5.jar
+#-libraryjars src/main/libs/gson-1.6.jar
+#-libraryjars src/main/libs/greendao.jar
+#-libraryjars src/main/libs/jffmpeg-1.1.0.jar
+#-libraryjars src/main/libs/libphonenumber-6.0.jar
+#-libraryjars src/main/libs/org.xbill.dns_2.1.6.jar
+#-libraryjars src/main/libs/prettytime-3.2.4.Final.jar
+#-libraryjars src/main/libs/universal-image-loader-1.9.2.jar
+#-libraryjars src/main/libs/httpclient-4.2.5.jar
+
+# Explicitly preserve all serialization members. The Serializable interface
+# is only a marker interface, so it wouldn't save them.
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+
+
+-assumenosideeffects class android.util.Log {
+    public static *** v(...);
+    public static *** i(...);
+    public static *** d(...);
+    public static *** w(...);
+    public static *** e(...);
+}
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+# keep setters in Views so that animations can still work.
+# see http://proguard.sourceforge.net/manual/examples.html#beans
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+
+# The support library contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version.  We know about them, and they are safe.
+
+-dontwarn android.support.**
+-dontwarn org.apache.**
+
+
+
+-keep class javax.** { *; }
+-keep class org.** { *; }
+-keep interface  org.** { *; }
+-keep interface  javax.** { *; }
+
+
+-keepclassmembers class * extends de.greenrobot.dao.AbstractDao {
+    public static java.lang.String TABLENAME;
+}
+-keep class **$Properties
+
+
+# support-v4
+-dontwarn android.support.v4.**
+-keep class android.support.v4.app.** { *; }
+-keep interface android.support.v4.app.** { *; }
+
+# support-v7
+
+-dontwarn android.support.v7.**
+-keep class android.support.v7.** { *; }
+-keep class android.support.v7.internal.** { *; }
+-keep interface android.support.v7.internal.** { *; }
+
+-dontwarn org.xbill.DNS.**
+-keep class org.xbill.DNS.** { *; }
+-keep interface org.xbill.DNS.** { *; }
+
+-keep class de.measite.smack.AndroidDebugger { *; }
+-keep class * implements org.jivesoftware.smack.initializer.SmackInitializer
+-keep class * implements org.jivesoftware.smack.provider.IQProvider
+-keep class * implements org.jivesoftware.smack.provider.PacketExtensionProvider
+-keep class * extends org.jivesoftware.smack.packet.Packet
+-keep class org.jivesoftware.smack.XMPPConnection
+-keep class org.jivesoftware.smack.ReconnectionManager
+-keep class org.jivesoftware.smack.CustomSmackConfiguration
+-keep class org.jivesoftware.smackx.disco.ServiceDiscoveryManager
+-keep class org.jivesoftware.smackx.xhtmlim.XHTMLManager
+-keep class org.jivesoftware.smackx.muc.MultiUserChat
+-keep class org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamManager
+-keep class org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager
+-keep class org.jivesoftware.smackx.filetransfer.FileTransferManager
+-keep class org.jivesoftware.smackx.iqlast.LastActivityManager
+-keep class org.jivesoftware.smackx.commands.AdHocCommandManager
+-keep class org.jivesoftware.smackx.ping.PingManager
+-keep class org.jivesoftware.smackx.privacy.PrivacyListManager
+-keep class org.jivesoftware.smackx.time.EntityTimeManager
+-keep class org.jivesoftware.smackx.vcardtemp.VCardManager
+
+-keepattributes Signature
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+#-keep class com.google.gson.stream.** { *; }
+
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.google.gson.examples.android.model.** { *; }
+
+
+-keep class com.yahala.android.emoji.** { *; }
+

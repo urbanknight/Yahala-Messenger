@@ -1,0 +1,129 @@
+/*
+ * This is the source code of Telegram for Android v. 1.3.x.
+ * It is licensed under GNU GPL v. 2 or later.
+ * You should have received a copy of the license in this archive (see LICENSE).
+ *
+ * Copyright Nikolai Kudashov, 2013-2014.
+ */
+
+package com.yahala.messenger;
+
+import android.content.Context;
+import android.os.Build;
+import android.util.Log;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
+
+public class NativeLoader {
+
+    private static final long sizes[] = new long[]{
+            423148,     //armeabi
+            476400,     //armeabi-v7a
+            628028,    //x86
+            0,          //mips
+    };
+
+    public static void initNativeLibs(Context context) {
+        if (Build.VERSION.SDK_INT >= 9) {
+            try {
+                String folder = null;
+                long libSize = 0;
+                long libSize2 = 0;
+
+                if (Build.CPU_ABI.equalsIgnoreCase("armeabi-v7a")) {
+                    folder = "armeabi-v7a";
+                    libSize = sizes[1];
+                    libSize2 = sizes[0];
+                } else if (Build.CPU_ABI.equalsIgnoreCase("armeabi")) {
+                    folder = "armeabi";
+                    libSize = sizes[0];
+                } else if (Build.CPU_ABI.equalsIgnoreCase("x86")) {
+                    folder = "x86";
+                    libSize = sizes[2];
+                } else if (Build.CPU_ABI.equalsIgnoreCase("mips")) {
+                    folder = "mips";
+                    libSize = sizes[3];
+                } else {
+                    System.loadLibrary("yahala");
+                    Log.e("yahala`", "Unsupported arch: " + Build.CPU_ABI);
+                    return;
+                }
+
+                File destFile = new File(context.getApplicationInfo().nativeLibraryDir + "/libyahala.so");
+                if (destFile.exists() && (destFile.length() == libSize || libSize2 != 0 && destFile.length() == libSize2)) {
+                    Log.d("yahala", "Load normal lib");
+                    try {
+                        System.loadLibrary("yahala");
+                        return;
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                File destLocalFile = new File(context.getFilesDir().getAbsolutePath() + "/libyahala.so");
+                if (destLocalFile.exists()) {
+                    if (destLocalFile.length() == libSize) {
+                        Log.d("yahala", "Load local lib");
+                        System.load(destLocalFile.getAbsolutePath());
+                        return;
+                    } else {
+                        destLocalFile.delete();
+                    }
+                }
+
+                Log.e("yahala", "Library not found, arch = " + folder);
+
+                ZipFile zipFile = null;
+                InputStream stream = null;
+                try {
+                    zipFile = new ZipFile(context.getApplicationInfo().sourceDir);
+                    ZipEntry entry = zipFile.getEntry("lib/" + folder + "/libyahala.so");
+                    if (entry == null) {
+                        throw new Exception("Unable to find file in apk:" + "lib/" + folder + "/libyahala.so");
+                    }
+
+                    stream = zipFile.getInputStream(entry);
+
+                    OutputStream out = new FileOutputStream(destLocalFile);
+                    byte[] buf = new byte[4096];
+                    int len;
+                    while ((len = stream.read(buf)) > 0) {
+                        Thread.yield();
+                        out.write(buf, 0, len);
+                    }
+                    out.close();
+
+                    System.load(destLocalFile.getAbsolutePath());
+                    return;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    if (stream != null) {
+                        try {
+                            stream.close();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    if (zipFile != null) {
+                        try {
+                            zipFile.close();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        System.loadLibrary("yahala");
+
+    }
+}

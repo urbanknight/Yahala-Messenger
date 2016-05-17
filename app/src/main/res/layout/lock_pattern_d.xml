@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:padding="20dp"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:text="@string/Unlock"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:id="@+id/description"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:text="@string/UnlockMessage"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <com.asghonim.salp.PasswordGrid
+        android:layout_centerInParent="true"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:background="@color/Red2"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/password_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:useDefaultMargins="true"
+        android:visibility="gone"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/header"
+        android:paddingBottom="60dp"
+        android:paddingTop="30dp">
+
+        <com.asghonim.salp.PasswordButton
+            android:layout_marginRight="@dimen/password_margin"
+
+            android:layout_width="@dimen/password_view_button"
+            android:layout_height="@dimen/password_view_button"
+            android:id="@+id/password_button_1"
+            android:background="@drawable/loginbuttonunpressed" />
+
+        <com.asghonim.salp.PasswordButton
+            android:layout_marginRight="@dimen/password_margin"
+            android:layout_width="@dimen/password_view_button"
+            android:layout_height="@dimen/password_view_button"
+            android:id="@+id/password_button_2"
+            android:background="@drawable/loginbuttonunpressed" />
+
+        <com.asghonim.salp.PasswordButton
+            android:layout_width="@dimen/password_view_button"
+            android:layout_height="@dimen/password_view_button"
+            android:id="@+id/password_button_3"
+            android:background="@drawable/loginbuttonunpressed" />
+
+        <com.asghonim.salp.PasswordButton
+            android:layout_marginTop="@dimen/password_margin"
+            android:layout_width="@dimen/password_view_button"
+            android:layout_height="@dimen/password_view_button"
+            android:id="@+id/password_button_4"
+            android:background="@drawable/loginbuttonunpressed" />
+
+        <com.asghonim.salp.PasswordButton
+            android:layout_marginTop="@dimen/password_margin"
+            android:layout_width="@dimen/password_view_button"
+            android:layout_height="@dimen/password_view_button"
+            android:id="@+id/password_button_5"
+            android:background="@drawable/loginbuttonunpressed" />
+
+        <com.asghonim.salp.PasswordButton
+            android:layout_marginTop="@dimen/password_margin"
+            android:layout_width="@dimen/password_view_button"
+            android:layout_height="@dimen/password_view_button"
+            android:id="@+id/password_button_6"
+            android:background="@drawable/loginbuttonunpressed" />
+
+        <com.asghonim.salp.PasswordButton
+            android:layout_marginTop="@dimen/password_margin"
+            android:layout_width="@dimen/password_view_button"
+            android:layout_height="@dimen/password_view_button"
+            android:id="@+id/password_button_7"
+            android:background="@drawable/loginbuttonunpressed" />
+
+        <com.asghonim.salp.PasswordButton
+            android:layout_marginTop="@dimen/password_margin"
+            android:layout_width="@dimen/password_view_button"
+            android:layout_height="@dimen/password_view_button"
+            android:id="@+id/password_button_8"
+            android:background="@drawable/loginbuttonunpressed" />
+
+        <com.asghonim.salp.PasswordButton
+            android:layout_marginTop="@dimen/password_margin"
+            android:layout_width="@dimen/password_view_button"
+            android:layout_height="@dimen/password_view_button"
+            android:id="@+id/password_button_9"
+            android:background="@drawable/loginbuttonunpressed" />
+    </com.asghonim.salp.PasswordGrid>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:id="@+id/action_buttons"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/password_grid"
+        android:layout_alignWithParentIfMissing="false">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/DialogButtonPressed"></View>
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/cancel_button_container"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cancel_button"
+                    android:textColor="@drawable/dialog_text"
+                    android:padding="13dp"
+                    android:background="@drawable/dialog_button_red"
+                    android:layout_width="fill_parent"
+                    android:text="@string/Cancel"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:background="@color/DialogButtonPressed"></View>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/done_button"
+                android:textColor="@drawable/dialog_text"
+                android:padding="13dp"
+                android:background="@drawable/dialog_button_red"
+                android:layout_width="fill_parent"
+                android:text="@string/Continue"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

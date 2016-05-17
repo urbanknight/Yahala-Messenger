@@ -1,0 +1,118 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="#FFfcfcfc">
+
+    <!-- <LinearLayout android:orientation="vertical"
+                       android:layout_width="fill_parent" android:id="@+id/connection_status_layout"
+                       android:layout_height="35dp" android:background="@color/SkyBlue2"
+                       android:alpha="1"
+                       android:layout_below="@+id/tabs"
+                       android:layout_alignParentLeft="true"
+                       android:layout_alignParentStart="true"
+                       android:layout_marginTop="0dp"
+                       android:gravity="center_vertical|center">
+
+           <TextView android:id="@+id/connection_status"
+               android:layout_width="wrap_content" android:text="Connection lost"
+               android:layout_height="wrap_content"
+               android:textColor="@color/White"
+               android:textSize="14dp" />
+         </LinearLayout>-->
+
+    <View
+        android:id="@+id/background_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0"
+        android:background="#FFe9e9e9"></View>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AppBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/ToolBarStyle"
+            android:minHeight="48dp"
+            android:titleTextColor="@color/White"
+            android:subtitleTextColor="@color/White"
+            android:elevation="0dp"
+            android:background="#FF3f9fe0"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+            />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:theme="@style/TabLayoutStyle"
+
+            app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+            android:background="#FF3f9fe0"
+            app:activateTextColor="#ffffffff"
+            app:deactivateTextColor="#fff0f0f0"
+            app:dividerColor="#fff0f0f0"
+            app:shouldExpand="true"
+            app:tabPaddingLeftRight="0dp"
+            app:tabSwitch="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="#FF2289ce"
+        android:layout_alignTop="@+id/pager"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></View>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/quickcontact_badge_small"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view"></View>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/unreadCount"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/White"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_unread"
+        android:layout_toEndOf="@+id/background_view"
+        android:layout_marginLeft="114dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/background_view"
+        android:layout_marginTop="5dp" />
+
+</android.support.design.widget.CoordinatorLayout>

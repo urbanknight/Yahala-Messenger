@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/circle_bg">
+
+    <ImageView
+        android:id="@+id/new_update_img"
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_new_update"
+
+        android:visibility="gone" />
+
+
+</LinearLayout>

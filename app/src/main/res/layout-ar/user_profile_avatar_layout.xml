@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="3dp"
+        android:background="#f8f8f8"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.yahala.ui.Views.CircleImageView.PictureImplCircleImageView
+            android:id="@+id/settings_avatar_image"
+            android:layout_width="104dp"
+            android:layout_height="104dp" />
+        <!-- app:bottomCircleOffColor="#ffe9e9e9"
+         app:bottomCircleIndent="1dp"
+         app:middleCircleOffColor="#f9f9f9"
+         app:middleCircleOnColor="#f9f9f9"
+         app:middleCircleIndent="3dp"-->
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/settings_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/settings_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#999999"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"></View>
+</LinearLayout>

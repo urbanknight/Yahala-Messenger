@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--<item
+        android:id="@+id/messages_list_menu_search"
+        android:icon="@drawable/ic_ab_search"
+        android:title="@string/Search"
+        sabd:showAsAction="always|collapseActionView"
+        sabd:actionViewClass="android.support.v7.widget.SearchView"/>-->
+    <item
+        android:id="@+id/NewGroup"
+        android:title="@string/NewGroup" />
+    <item
+        android:id="@+id/InviteFriends"
+        android:title="@string/InviteFriends" />
+
+    <item
+        android:id="@+id/Status"
+        android:title="@string/Status" />
+    <item
+        android:id="@+id/Settings"
+        android:title="@string/SETTINGS" />
+</menu>

@@ -1,0 +1,268 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"></style>
+    <!--THEMES-->
+
+    <style name="Theme.TMessages.Start" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionModeStyle">@style/Widget.ActionMode</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Transparent.TMessages.Start</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null<!--@drawable/shadow--></item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/ActionBar.Transparent.TMessages</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+
+
+    </style>
+
+    <style name="Theme.TMessages" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/Widget.ActionMode</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Transparent.TMessages</item>
+        <item name="android:actionOverflowButtonStyle">
+            @style/ActionBar.Transparent.TMessages.ActionButtonOverflow
+        </item>
+        <item name="android:homeAsUpIndicator">@drawable/ab_icon_up_messages</item>
+        <item name="android:popupMenuStyle">@style/ActionBar.Transparent.TMessages.Popup</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:itemTextAppearance">@style/ActionBar.Transparent.TMessages.Item</item>
+        <item name="android:listViewStyle">@style/Theme.TMessages.ListView</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector</item>
+        <item name="android:editTextStyle">@style/Theme.TMessages.EditText</item>
+        <item name="android:windowContentOverlay">
+            @null<!--@android:color/transparent--><!--@drawable/shadow--></item>
+        <item name="android:actionBarItemBackground">@drawable/bar_selector</item>
+        <!-- <item name="searchViewSearchIcon">@android:color/transparent</item>-->
+
+        <item name="actionBarStyle">@style/ActionBar.Transparent.TMessages</item>
+        <item name="actionOverflowButtonStyle">
+            @style/ActionBar.Transparent.TMessages.ActionButtonOverflow
+        </item>
+        <item name="homeAsUpIndicator">@drawable/ab_icon_up_messages</item>
+        <item name="popupMenuStyle">@style/ActionBar.Transparent.TMessages.Popup</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="listChoiceBackgroundIndicator">@drawable/list_selector</item>
+        <item name="actionBarItemBackground">@drawable/bar_selector</item>
+    </style>
+
+    <style name="Theme.TMessages.ActionMode">
+
+    </style>
+
+    <style name="Widget.ActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="android:background">@color/PrimaryColor</item>
+        <item name="android:backgroundSplit">@color/PrimaryColor</item>
+        <item name="android:height">?android:attr/actionBarSize</item>
+        <item name="android:titleTextStyle">@android:color/white</item>
+        <item name="android:subtitleTextStyle">@android:color/white</item>
+    </style>
+
+
+    <style name="Theme.TMessages.Gallery" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Transparent.TMessages.Gallery</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:colorBackground">@color/gallery_background_color</item>
+        <item name="android:windowBackground">@color/gallery_background_color</item>
+        <item name="android:homeAsUpIndicator">@drawable/ab_icon_up_gallery</item>
+        <item name="android:actionOverflowButtonStyle">
+            @style/ActionBar.Transparent.TMessages.Gallery.ActionButtonOverflow
+        </item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector</item>
+        <item name="android:editTextStyle">@style/Theme.TMessages.EditText</item>
+
+        <item name="actionBarStyle">@style/ActionBar.Transparent.TMessages.Gallery</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="homeAsUpIndicator">@drawable/ab_icon_up_gallery</item>
+        <item name="actionOverflowButtonStyle">
+            @style/ActionBar.Transparent.TMessages.Gallery.ActionButtonOverflow
+        </item>
+        <item name="listChoiceBackgroundIndicator">@drawable/list_selector</item>
+
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+    </style>
+
+    <!--ACTION BAR-->
+
+    <style name="ActionBar.Transparent.TMessages" parent="Widget.AppCompat.ActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@color/PrimaryColor<!--@drawable/header--></item>
+        <item name="android:logo">@drawable/ic_launcher</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Transparent.TMessages.Gallery.Title
+        </item>
+        <item name="android:subtitleTextStyle">
+            @style/ActionBar.Transparent.TMessages.Gallery.Subtitle
+        </item>
+
+        <item name="background">@color/PrimaryColor</item>
+        <item name="logo">@drawable/ic_launcher</item>
+        <item name="titleTextStyle">@style/ActionBar.Transparent.TMessages.Gallery.Title</item>
+        <item name="subtitleTextStyle">@style/ActionBar.Transparent.TMessages.Gallery.Subtitle
+        </item>
+    </style>
+
+    <style name="ActionBar.Transparent.TMessages.Start" parent="Widget.AppCompat.ActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@color/PrimaryColor</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Transparent.TMessages.Gallery.Title
+        </item>
+        <item name="android:subtitleTextStyle">
+            @style/ActionBar.Transparent.TMessages.Gallery.Subtitle
+        </item>
+        <item name="android:title">""</item>
+
+        <item name="background">@color/PrimaryColor</item>
+        <item name="logo">@drawable/transparent</item>
+        <item name="title">""</item>
+        <item name="titleTextStyle">@style/ActionBar.Transparent.TMessages.Gallery.Title</item>
+        <item name="subtitleTextStyle">@style/ActionBar.Transparent.TMessages.Gallery.Subtitle
+        </item>
+    </style>
+
+    <style name="ActionBar.Transparent.TMessages.Gallery" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">#dd000000</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Transparent.TMessages.Gallery.Title
+        </item>
+
+        <item name="background">@drawable/gallery_action_bar</item>
+        <item name="titleTextStyle">@style/ActionBar.Transparent.TMessages.Gallery.Title</item>
+    </style>
+
+    <!--ACTION BAR ITEMS-->
+
+    <style name="ActionBar.Transparent.TMessages.Item" parent="@android:TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ActionBar.Transparent.TMessages.ActionButtonOverflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_ab_other</item>
+    </style>
+
+    <style name="ActionBar.Transparent.TMessages.Gallery.ActionButtonOverflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_ab_other_white</item>
+    </style>
+
+    <style name="ActionBar.Transparent.TMessages.Popup" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/popup_fixed</item>
+        <item name="android:dropDownSelector">@drawable/list_selector</item>
+    </style>
+
+    <style name="ActionBar.Transparent.TMessages.Gallery.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="ActionBar.Transparent.TMessages.Gallery.Subtitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">#ffd7e8f7</item>
+    </style>
+
+    <!--LIST VIEW-->
+
+    <style name="Theme.TMessages.ListView" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/list_selector</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">@color/divider</item>
+    </style>
+
+    <!--EDIT TEXT-->
+
+    <style name="Theme.TMessages.EditText" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/holo_edit_text_light</item>
+        <item name="android:textColor">#000000</item>
+
+    </style>
+
+    <style name="displayName" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/MediumBlack</item>
+
+    </style>
+
+    <style name="contactNameTitle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">38sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="searchTextHiglight">
+        <item name="android:textColor">@color/MediumBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PatternLoackDialogStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/Red2</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fadeEnabled">true</item>
+        <item name="android:fadeDuration">1500</item>
+        <item name="android:shadowColor">@color/transparent</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+
+    </style>
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+
+        <item name="tabIndicatorColor">@color/White</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTheme.TextAppearance.Design.Tab</item>
+        <item name="tabSelectedTextColor">@color/White</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Design.Tab" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#99FFFFFF</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <!--<item name="tabMaxWidth">@dimen/tab_max_width</item>-->
+        <item name="tabIndicatorColor">@color/White</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/White</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#99FFFFFF</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>

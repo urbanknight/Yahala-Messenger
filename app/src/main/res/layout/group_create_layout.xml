@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <EditText
+            android:id="@+id/bubble_input_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="0dp"
+            android:gravity="left|center_vertical"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textFilter|textNoSuggestions|textMultiLine"
+            android:maxLines="2"
+            android:minHeight="52dp"
+            android:paddingTop="3dp"
+            android:textColor="#000000"
+            android:textColorHint="#a6a6a6"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yahala.ui.Views.PinnedHeaderListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollAlwaysVisible="true"
+            android:fastScrollEnabled="true"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="30dp"
+            android:scrollbarStyle="outsideOverlay" />
+
+
+        <TextView
+            android:id="@+id/searchEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#808080"
+            android:textSize="24dp"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+</LinearLayout>

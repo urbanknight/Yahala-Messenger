@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="74dp"
+    android:background="@drawable/list_row"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="@dimen/listView_item_padding"
+    android:paddingRight="@dimen/listView_item_padding"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:id="@+id/avatar_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="1dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start|right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/presenceImg"
+                android:layout_width="15.67dp"
+                android:layout_height="15.67dp"
+                android:layout_alignBottom="@+id/img"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_type_unavailable"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/callVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img"
+                android:layout_alignEnd="@+id/img"
+                android:layout_alignRight="@+id/img"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/video_call"
+                android:visibility="visible" />cc
+
+            <ImageView
+                android:id="@+id/callVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img"
+                android:layout_alignEnd="@+id/img"
+                android:layout_alignRight="@+id/img"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/call"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical|start|right"
+                    android:orientation="horizontal">
+
+                    <!--  <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:textStyle="normal" android:fontFamily="Roboto"
+                          android:text="غير متصل" android:textSize="11dp" android:textColor="@color/Gray"
+                          android:id="@+id/presence"
+                          android:background="@drawable/roundedbg" />-->
+
+                    <ImageView
+                        android:id="@+id/checkImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/dialogs_check"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/halfcheckImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-9dp"
+                        android:src="@drawable/dialogs_halfcheck"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/displayName"
+                        style="@style/displayName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:singleLine="true"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical|start|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/unreadCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundedbg_blue"
+                        android:fontFamily="Roboto"
+                        android:text="0"
+                        android:textColor="@color/White"
+                        android:textSize="11dp"
+                        android:textStyle="normal"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/statusMessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="21dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:singleLine="true"
+                        android:textColor="@color/Gray"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="3dp">
+
+            <com.yahala.ui.Views.CircleImageView.PictureImplCircleImageView
+                android:id="@+id/img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+
+                android:baselineAlignBottom="false"
+                android:clickable="false"
+                android:cropToPadding="false"
+                android:maxHeight="60px"
+                android:maxWidth="60px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_placeholder" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/LightGrey" />
+
+</RelativeLayout>
