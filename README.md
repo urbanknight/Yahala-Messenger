@@ -21,7 +21,7 @@ In addition to basic messaging Yahala Messenger users can send each other unlimi
 - Free voice and video call.
 
 ####Notes
-- To make the app sending file using Out of Band Data XEP (006 XEP) you still need the server side code which still not uploaded yet. or you can just use your own serve side to handle the file upload request and return succes to the app.
+- To make the app sending file using Out of Band Data XEP (0066 XEP) you still need the server side code which still not uploaded yet. or you can just use your own serve side to handle the file upload request and return succes to the app.
 - This app only tested with Openfire server.
 - This app was stable but due to recent updates and changes this app now a [Pre-Alpha]{Under Development}, so dont expect a perfect practice or free bug app.
 - Any usefull contribution, suggestions or changing part of the code to a better practice is welcome.
