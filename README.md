@@ -25,3 +25,7 @@ In addition to basic messaging Yahala Messenger users can send each other unlimi
 - This app only tested with Openfire server.
 - This app was stable but due to recent updates and changes this app now a [Pre-Alpha]{Under Development}, so dont expect a perfect practice or free bug app.
 - Any usefull contribution, suggestions or changing part of the code to a better practice is welcome.
+
+####License
+GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+
