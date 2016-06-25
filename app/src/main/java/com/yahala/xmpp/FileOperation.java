@@ -72,7 +72,7 @@ import javax.net.ssl.X509TrustManager;
  */
 public class FileOperation {
     public float uploadProgress = 0;
-    String uploadUrl = "https://188.247.90.132:9092/FileUpload/";
+    String uploadUrl = "Your Server domain name or IP address";
     TelephonyManager telephonyManager;
     int currentRequestId;
     private boolean canceled;
