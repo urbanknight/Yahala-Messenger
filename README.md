@@ -27,5 +27,5 @@ In addition to basic messaging Yahala Messenger users can send each other unlimi
 - Any usefull contribution, suggestions or changing part of the code to a better practice is welcome.
 
 #### License
-GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+MIT https://opensource.org/licenses/MIT
 
